@@ -1,0 +1,34 @@
+/* 
+What is memory?
+- Whenever Javascript runs a program it need memory to store the information so that program can use them.
+
+Two Memory concepts: 
+Stack Memory
+Heap Memory
+
+Stack Memory: 
+- Stack memory actually stores the primitive values.
+- The primitive value is copied 
+
+Ex:
+let a = 10      // original value
+let b = a       // Copies value of a
+b = 50          // Updating b doesn't change a
+
+console.log(b)  // 50
+console.log(a)  // 10
+*/
+
+/* 
+HEAP MEMEORY
+
+- Heap memory actually stores the Non-primitive object/values.
+- Object itself stores in the heap
+- The variable name holds the reference of that object to point to it.
+
+let userOne = {name: "Keshava"}
+let userTwo = userOne
+userTwo.name = "Rahul"      // Copies the reference, not the object
+
+console.log(userOne.name)   // "Rahul" - both variable refer to the same object
+*/
